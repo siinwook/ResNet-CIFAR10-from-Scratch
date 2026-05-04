@@ -12,7 +12,7 @@ Training conditions of experiment 2,3 are indicated below
 
 | ResNet44 | PlainNet44 |
 | :---: | :---: |
-| ![ResNet44](./ResNet44.png) | ![PlainNet44](./PlainNet44.png) |
+| ![resnet44_summary](./resnet44_summary.png) | ![plainnet44_summary](./plainnet44_summary.png) |
 
 ### Observation
 
