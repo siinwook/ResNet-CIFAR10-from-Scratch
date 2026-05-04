@@ -10,11 +10,11 @@ This project reproduces and analyzes the key idea of ResNet, *"Deep Residual Lea
 - CIFAR-10 training pipeline with data augmentation
 - Memory complexity comparison using model summary
 - Error-rate comparison
-- Analysis of the degradation problem
+- Analysis of *the degradation problem*
 
 ## Key Result
 
-PlainNet becomes harder to optimize as depth increases, namely meets *the degradation problem*, while ResNet benefits from residual connections and trains more stably.
+Residual architecture address *the degradation problem* and make deep neural network optimization easy. Comparing shallow models, ResNet gains much accuracy and converges faster than PlainNet. Comparing deeper models, PlainNet accuracy satured while ResNet benefits the high depth.
 
 ## Experiments
 
