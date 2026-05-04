@@ -2,6 +2,8 @@
 
 This document summarizes the main experimental results and my observations.
 
+Experiment 1 is calculated by torchsummary
+
 Training conditions of experiment 2,3 are indicated below
 
 ---
