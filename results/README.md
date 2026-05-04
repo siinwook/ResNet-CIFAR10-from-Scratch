@@ -2,7 +2,7 @@
 
 This document summarizes the main experimental results and my observations.
 
-Training conditions of 2,3 are indicated below
+Training conditions of experiment 2,3 are indicated below
 
 ---
 
