@@ -26,7 +26,7 @@ Training conditions of experiment 2,3 are indicated below
 
 ## 2. ResNet44 vs PlainNet44 Error Rate
 
-![ResNet44 vs PlainNet44 Accuracy](./ResNet44_vs_PlainNet44_error_rate.png)
+![resnet44 vs plainnet44 error_rate](./resnet44_vs_plainnet44_error_rate.png)
 
 ### Observation
 
@@ -42,7 +42,7 @@ Training conditions of experiment 2,3 are indicated below
 
 ## 3. Degradation Problem: 20-layer vs 56-layer Networks
 
-![Degradation Problem](./20-layer_vs_56-layer_error_rate.png)
+![layer20_vs_layer56_error_rate](./layer20_vs_layer56_error_rate.png)
 
 ### Observation
 
