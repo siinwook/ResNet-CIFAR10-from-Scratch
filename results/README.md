@@ -36,7 +36,7 @@ calculated by torchsummary
 ### Interpretation
 
 - Deep neural network with residual architecture is easier to optimize
-- Skip connections used in every residual blocks, which represented as identity mapping, helps the responses flow easier.  
+- Skip connections used in every residual blocks, which represented as identity mapping, helps responses flow easier.  
 
 ---
 
