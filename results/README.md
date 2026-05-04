@@ -1,6 +1,7 @@
 # Experimental Results
 
 This document summarizes the main experimental results and my observations.
+Training conditions of 2,3 are indicated below)
 
 ---
 
@@ -51,3 +52,16 @@ This document summarizes the main experimental results and my observations.
 - Residual network addresses *the degradation problem* .
 
 ---
+
+**Training conditions**
+
+|||
+|---|---|
+| Dataset | CIFAR-10 |
+| Optimizer | Adam(1-35 epoch) / SGD(36-50 epoch) |
+| Learning rate | 0.001(1-20 epoch) / 0.0001(21-50 epoch) |
+| Batch size | 128 |
+| Epochs | 50 |
+| Data augmentation | Random crop, Horizontal flip, Color jitter, Gray scale |
+| Weight decay | 0.001 |
+| Device: cuda |
