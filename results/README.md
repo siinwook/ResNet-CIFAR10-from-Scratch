@@ -10,7 +10,9 @@ Training conditions of experiment 2,3 are indicated below
 
 ## 1. Memory Complexity
 
-![Memory Complexity](./memory_complexity_summary.png)
+| ResNet44 | PlainNet44 |
+| :---: | :---: |
+| ![ResNet44](./ResNet44.png) | ![PlainNet44](./PlainNet44.png) |
 
 ### Observation
 
