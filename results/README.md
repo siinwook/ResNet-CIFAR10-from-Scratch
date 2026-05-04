@@ -42,7 +42,7 @@ Training conditions of experiment 2,3 are indicated below
 
 ## 3. Degradation Problem: 20-layer vs 56-layer Networks
 
-![layer20_vs_layer56_error_rate](./layer20_vs_layer56_error_rate.png)
+![layer20_vs_layer56_error_rate](./layer20_layer56_error_rate.png)
 
 ### Observation
 
