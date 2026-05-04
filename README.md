@@ -16,7 +16,7 @@ This project reproduces and analyzes the key idea of ResNet, *"Deep Residual Lea
 
 - Residual architecture address *the degradation problem* and make deep neural network optimization easy. 
 - Comparing shallow models, ResNet gains much accuracy and converges faster than PlainNet.
-- Comparing deeper models, PlainNet accuracy satured while ResNet benefits the high depth.
+- Comparing deeper models, PlainNet accuracy satured while ResNet benefits the deep layer
 
 ## Experiments
 
