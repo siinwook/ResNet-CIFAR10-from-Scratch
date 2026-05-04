@@ -22,7 +22,7 @@ Residual architecture address *the degradation problem* and make deep neural net
 |---|---|
 | Memory complexity | Model summary comparison |
 | ResNet44 vs PlainNet44 | Accuracy and training difficulty |
-| ResNet20/56 vs PlainNet20/56 | Degradation problem |
+| ResNet20/56 vs PlainNet20/56 | *The degradation problem* |
 
 ## Tech Stack
 
