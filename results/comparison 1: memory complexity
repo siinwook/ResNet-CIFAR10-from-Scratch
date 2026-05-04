@@ -49,9 +49,3 @@ Forward/backward pass size (MB): 1224.13
 Params size (MB): 2.51
 Estimated Total Size (MB): 1228.15
 ----------------------------------------------------------------
-
-Trainable params:
-ResNet44   -> 0.661M
-PlainNet44 -> 0.658M
-
-Interpretation: Almost same number of parameter(0.658 ~ 0.661M) with negligible difference (Option B)
