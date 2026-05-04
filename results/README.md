@@ -2,8 +2,6 @@
 
 This document summarizes the main experimental results and my observations.
 
-Experiment 1 is calculated by torchsummary
-
 Training conditions of experiment 2,3 are indicated below
 
 ---
@@ -13,10 +11,12 @@ Training conditions of experiment 2,3 are indicated below
 | ResNet44 | PlainNet44 |
 | :---: | :---: |
 | ![resnet44_summary](./resnet44_summary.png) | ![plainnet44_summary](./plainnet44_summary.png) |
-
+calculated by torchsummary
 ### Observation
 
 - ResNet44 and PlainNet44 have almost similar parameter counts.
+- ResNet44 has 0.661M trainable parameters
+- PlainNet44 has 0.658M trainable parameters
 
 ### Interpretation
 
