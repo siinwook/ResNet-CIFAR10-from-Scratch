@@ -2,7 +2,7 @@
 
 This document summarizes the main experimental results and my observations.
 
-Training conditions of 2,3 are indicated below)
+Training conditions of 2,3 are indicated below
 
 ---
 
@@ -65,4 +65,4 @@ Training conditions of 2,3 are indicated below)
 | Epochs | 50 |
 | Data augmentation | Random crop, Horizontal flip, Color jitter, Gray scale |
 | Weight decay | 0.001 |
-| Device: cuda |
+| Device | cuda |
