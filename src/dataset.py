@@ -3,7 +3,7 @@ from torchvision.datasets import CIFAR10
 from torchvision.transforms import v2
 from torch.utils.data import Dataset,DataLoader
 
-def get_cifar10_dataloaders(batch_size=128,root='./data'):
+def get_cifar10_dataloaders(batch_size=128,root='./data')
   #CIFAR10 download mirror server
   #CIFAR10.url = "https://data.brainchip.com/dataset-mirror/cifar10/cifar-10-python.tar.gz"
 
@@ -11,16 +11,25 @@ def get_cifar10_dataloaders(batch_size=128,root='./data'):
   # Dataset transform
   # =========================
   train_transform = v2.Compose([
-      # Train data augmentation
-      v2.RandomCrop(32,padding=4),
-      v2.RandomHorizontalFlip(),
-      v2.ColorJitter(0.4,0.4,0.4,0.1), # Brightness, ...
-      v2.RandomGrayscale(0.2), # RGB -> Gray
-      v2.ToTensor()
+    v2.RandomCrop(32, padding=4),
+    v2.RandomHorizontalFlip(),
+    v2.ColorJitter(0.4, 0.4, 0.4, 0.1),
+    v2.RandomGrayscale(0.2),
+    v2.ToImage(),
+    v2.ToDtype(torch.float32, scale=True),
+    v2.Normalize(
+      mean=(0.4914, 0.4822, 0.4465),
+      std=(0.2470, 0.2435, 0.2616),
+)
   ])
 
   test_transform = v2.Compose([
-      v2.ToTensor()
+    v2.ToImage(),
+    v2.ToDtype(torch.float32, scale=True),
+    v2.Normalize(
+      mean=(0.4914, 0.4822, 0.4465),
+      std=(0.2470, 0.2435, 0.2616),
+)
   ])
 
   # =========================
