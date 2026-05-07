@@ -1,5 +1,5 @@
 import torch
-import torch.nn.init as init
+from torch import nn
 
 # =========================
 # Weight initialization
@@ -7,17 +7,17 @@ import torch.nn.init as init
 def init_weights(m):
     if isinstance(m, nn.Conv2d):
         # Kaiming Normal (He Normal)
-        init.kaiming_normal_(m.weight,mode="fan_out", nonlinearity='relu')
+        nn.init.kaiming_normal_(m.weight,mode="fan_out", nonlinearity='relu')
         if m.bias is not None:
-            init.constant_(m.bias, 0)
+            nn.init.constant_(m.bias, 0)
     elif isinstance(m, nn.Linear):
         # Kaiming Normal (He Normal)
-        init.kaiming_normal_(m.weight,mode="fan_out", nonlinearity='relu')
+        nn.init.kaiming_normal_(m.weight,mode="fan_out", nonlinearity='relu')
         if m.bias is not None:
-            init.constant_(m.bias, 0)
+            nn.init.constant_(m.bias, 0)
     elif isinstance(m, nn.BatchNorm2d):
-        init.constant_(m.weight, 1)
-        init.constant_(m.bias, 0)
+        nn.init.constant_(m.weight, 1)
+        nn.init.constant_(m.bias, 0)
 
 # =========================
 # Train loop
