@@ -67,6 +67,6 @@ calculated by torchsummary
 | Learning rate | 0.001(1-20 epoch) / 0.0001(21-50 epoch) |
 | Batch size | 128 |
 | Epochs | 50 |
-| Data augmentation | Random crop, Horizontal flip, Color jitter, Gray scale |
+| Data augmentation | Random crop, Horizontal flip, Color jitter, Gray scale, Normalize |
 | Weight decay | 0.001 |
 | Device | cuda |
