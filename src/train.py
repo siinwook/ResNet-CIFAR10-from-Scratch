@@ -7,8 +7,19 @@ from src.utils import train_loop, test_loop, init_weights
 from src.models.resnet import ResNet
 from src.models.plainnet import PlainNet
 
-def train_and_test(model,loss_fn=nn.CrossEntropyLoss(),train_dataloader,test_dataloader,train_acc_list=[],train_loss_list=[],test_acc_list=[],
-                   device='cpu',optimizers=[Adam,Adam,SGD],epochs=[20,15,15],lrs=[1e-3,1e-4,1e-4],weight_decays=[1e-3,1e-3,1e-3])
+def train_and_test(
+    model,
+    train_dataloader,
+    test_dataloader,
+    loss_fn,
+    train_acc_list=None,
+    train_loss_list=None,
+    test_acc_list=None,
+    device="cpu",
+    optimizers=None,
+    epochs=None,
+    lrs=None,
+    weight_decays=None):
   epoch=0
   for i in range(len(epochs)):
     now_epoch=epochs[i]
@@ -74,5 +85,18 @@ optimizers=[Adam,Adam,SGD]
 # =========================
 # Train and test
 # =========================
-train_and_test(model,loss_fn=nn.CrossEntropyLoss(),train_dataloader,test_dataloader,train_acc_list=[],train_loss_list=[],test_acc_list=[],
-                   device='cuda',optimizers=[Adam,Adam,SGD],epochs=[20,35,50],lrs=[1e-3,1e-4,1e-4],weight_decays=[1e-3,1e-3,1e-3])
+train_and_test(model=model,
+    train_dataloader=train_dataloader,
+    test_dataloader=test_dataloader,
+    loss_fn=loss_fn,
+    train_acc_list=Res_train_acc_list,
+    train_loss_list=Res_train_loss_list,
+    test_acc_list=Res_test_acc_list,
+    #train_acc_list=Plain_train_acc_list,
+    #train_loss_list=Plain_train_loss_list,
+    #test_acc_list=Plain_test_acc_list,
+    device=device,
+    optimizers=optimizers,
+    epochs=epochs,
+    lrs=lrs,
+    weight_decays=weight_decays)
