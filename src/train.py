@@ -4,8 +4,8 @@ from torch.optim import SGD,Adam
 
 from src.dataset import get_cifar10_dataloaders
 from src.utils import train_loop, test_loop, init_weights
-from models.resnet import ResNet
-from models.plainnet import PlainNet
+from src.models.resnet import ResNet
+from src.models.plainnet import PlainNet
 
 def train_and_test(model,loss_fn=nn.CrossEntropyLoss(),train_dataloader,test_dataloader,train_acc_list=[],train_loss_list=[],test_acc_list=[],
                    device='cpu',optimizers=[Adam,Adam,SGD],epochs=[20,15,15],lrs=[1e-3,1e-4,1e-4],weight_decays=[1e-3,1e-3,1e-3])
@@ -33,7 +33,7 @@ def train_and_test(model,loss_fn=nn.CrossEntropyLoss(),train_dataloader,test_dat
                 )
     epoch+=1
 
-device = 'cuda' if torch.cuda.is_avaliable() else 'cpu'
+device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
 # =========================
 # Get dataloader
