@@ -3,7 +3,7 @@ from torchvision.datasets import CIFAR10
 from torchvision.transforms import v2
 from torch.utils.data import Dataset,DataLoader
 
-def get_cifar10_dataloaders(batch_size=128,root='./data')
+def get_cifar10_dataloaders(batch_size=128,root='./data'):
   #CIFAR10 download mirror server
   #CIFAR10.url = "https://data.brainchip.com/dataset-mirror/cifar10/cifar-10-python.tar.gz"
 
