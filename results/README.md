@@ -54,7 +54,7 @@ calculated by torchsummary
 ### Interpretation
 
 - Plain network suffers from *the degradation problem*(accuracy satured at some specific depth and decrease seriously), this phenomena occurs due to neither overfitting(no train/test accuracy gap) nor vanishing gradients(addressed by BN)
-- Residual network addresses *the degradation problem* .
+- Residual network addresses *the degradation problem* and make optimization easier.
 
 ---
 
