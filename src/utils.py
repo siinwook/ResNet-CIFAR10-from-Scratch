@@ -52,7 +52,7 @@ def train_loop(model,optimizer,loss_fn,dataloader,device,train_acc_list=None, tr
 # =========================
 def test_loop(model,dataloader,device,test_acc_list=None):
   model.eval()
-  if test_acc_list==None:
+  if test_acc_list is None:
     test_acc_list=[]
 
   current=0
