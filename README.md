@@ -26,6 +26,15 @@ This project reproduces and analyzes the key idea of ResNet, *"Deep Residual Lea
 | ResNet44 vs PlainNet44 | Accuracy and training difficulty |
 | ResNet20/56 vs PlainNet20/56 | *The degradation problem* |
 
+## How to Run
+
+```bash
+git clone https://github.com/siinwook/ResNet-CIFAR10-from-Scratch.git
+cd ResNet-CIFAR10-from-Scratch
+
+pip install -r requirements.txt
+python -m src.train
+```
 ## Tech Stack
 
 PyTorch, torchvision, NumPy, Cuda, Matplotlib, Jupyter Notebook
