@@ -27,7 +27,6 @@ def train_and_test(model,loss_fn=nn.CrossEntropyLoss(),train_dataloader,test_dat
                 device
                 )
       test_loop(model,
-                loss_fn,
                 test_dataloader,
                 test_acc_list,
                 device
