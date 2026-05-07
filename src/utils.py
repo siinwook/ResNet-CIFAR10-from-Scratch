@@ -22,8 +22,12 @@ def init_weights(m):
 # =========================
 # Train loop
 # =========================
-def train_loop(model,optimizer,loss_fn,dataloader,train_acc_list=[], train_loss_list=[],device):
+def train_loop(model,optimizer,loss_fn,dataloader,device,train_acc_list=None, train_loss_list=None):
   model.train()
+  if train_acc_list is None:
+    train_acc_list = []
+  if train_loss_list is None:
+    train_loss_list = []  
 
   current=0
   size = len(dataloader.dataset)
@@ -46,8 +50,10 @@ def train_loop(model,optimizer,loss_fn,dataloader,train_acc_list=[], train_loss_
 # =========================
 # Test loop
 # =========================
-def test_loop(model,dataloader,test_acc_list=[],device):
+def test_loop(model,dataloader,device,test_acc_list=None):
   model.eval()
+  if test_acc_list=None:
+    test_acc_list=[]
 
   current=0
   size = len(dataloader.dataset)
